@@ -4,11 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment03</title>
+
+    <!--Manrope google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!--DaisyYI + Tail wind-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+<!--font-Awsome-->
+<script src="https://kit.fontawesome.com/595665dc5f.js" crossorigin="anonymous"></script>
+<style>
+    .font-manrope{
+        font-family: "Manrope", sans-serif;
+    }
+    .font-color-h{
+      color: #212121;
+    }
+    .font-color-p{
+      color: #494949;
+    }
+</style>
+<!--shared style-->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'shared-color': '#ABEF5F',
+        }
+      }
+    }
+  }
+</script>
 
 </head>
-<body>
-    
+<body class="font-manrope bg-white">
+<!--header section-->
+    <header class="lg:mx-36">
+      <div class="navbar bg-base-100 bg-white  justify-between">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl font-color-h"> <i class="fa-solid fa-arrow-right 
+            -rotate-45 border-solid bg-shared-color rounded-full text-black p-2"></i>Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a><summary class="font-color-h font-semibold">Home</summary></a></li>
+            <li><a class="font-color-p"> Parent </a></li>
+            <li><a class="font-color-p">Portfolio</a></li>
+            <li><a class="font-color-p">Blogs</a></li>
+            <li><a class="font-color-p">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden md:flex md:!justify-end">
+          <i class="fa-solid fa-magnifying-glass mr-4 border-solid bg-white shadow-lg rounded-full text-black p-3"></i>
+          <i class="fa-solid fa-cart-shopping mr-4 border-solid bg-white shadow-lg rounded-full text-black p-3"></i>
+          <a class="btn border-inherit rounded-full bg-shared-color font-color-h hover:bg-slate-300">Book Consult <i class="fa-solid fa-arrow-right 
+            -rotate-45 border-solid bg-black rounded-full text-white p-2"></i></a>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <ul class="menu px-1">
+              <li><a><summary>Home</summary></a></li>
+              <li><a> Parent </a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="card w-5/6 mt-12 mx-36">
+        <figure class="mb-6">
+          <img
+            src="assets/banner.png"
+            alt="house" />
+        </figure>
+        <div class="text-center">
+          <h2 class="mb-6 text-6xl font-extrabold font-color-h">A barn house of this design has a  <br> striking appearance</h2>
+          <p class="mb-6 text-base font-medium font-color-p">The barn house captivates with its 
+            blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
+             <br> accents, and large windows that flood the space with natural light.</p>
+          <div class="card-actions justify-center">
+            <button class="btn bg-[#cae6a8] border-inherit rounded-full font-color-h hover:bg-neutral-400">View Details 
+              <i class="fa-solid fa-arrow-right -rotate-45 border-solid bg-[#93e635] rounded-full text-black p-2"></i></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
